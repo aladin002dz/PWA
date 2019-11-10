@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My First PWA</title>
-    <link rel="manifest" href="/manifest.webmanifest">
-    <meta name="theme-color" content="#3367D6"/>
+    <meta name="theme-color" content="#ff0000"/>
+    <link rel="manifest" href="manifest.json">
     <script>
+        //if browser support service worker
         if('serviceWorker' in navigator) {
           navigator.serviceWorker.register('sw.js');
         };
@@ -15,6 +16,6 @@
 </head>
 <body>
     <h1>PWA</h1>
-    <p>5th attempt!</p>
+    <p>Hello world!</p>
 </body>
 </html>
